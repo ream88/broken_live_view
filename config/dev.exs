@@ -52,7 +52,8 @@ config :broken, BrokenWeb.Endpoint,
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
       ~r{lib/broken_web/views/.*(ex)$},
-      ~r{lib/broken_web/templates/.*(eex)$}
+      ~r{lib/broken_web/templates/.*(eex)$},
+      ~r{lib/broken_web/live/.*(ex)$}
     ]
   ]
 

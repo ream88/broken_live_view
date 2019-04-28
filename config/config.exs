@@ -12,7 +12,8 @@ config :broken, BrokenWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "/dH/09cttreYKgUxXMdLPubKPIKxBkzmVjsUDEh3irzq08s8Dxf5mak8qvHwUDPR",
   render_errors: [view: BrokenWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Broken.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: Broken.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [signing_salt: "SECRET_SALT"]
 
 # Configures Elixir's Logger
 config :logger, :console,
